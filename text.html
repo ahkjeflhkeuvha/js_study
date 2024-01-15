@@ -1,10 +1,15 @@
 <html>
     <body>
         <script>
-            const array = [1, 2, 3, 4]
+            const array = ['사과', '배', '귤', '바나나']
 
-            console.log(array.length)
-            console.log(array.push(5))
+            for(const i in array){
+                console.log(i)
+            }
+
+            for(const i of array){
+                console.log(i)
+            }
         </script>
     </body>
 </html>
