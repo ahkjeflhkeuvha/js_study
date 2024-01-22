@@ -1,0 +1,15 @@
+<body>
+    <script>
+        function min(array){
+            let output = array[0];
+
+            for(let i = 0; i<array.length; i++){
+                output = Math.min(array[i], output);
+            }
+            return output;
+        }
+        
+        let array = [95, 41, 64, 80, 612, 5]
+        console.log(min(array));
+    </script>
+</body>
