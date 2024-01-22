@@ -1,0 +1,10 @@
+<body>
+    <script>
+        function leapyear(year){
+            return (year%4 == 0) && (year%100 != 0) || (year%400 == 0)
+        }
+        
+        console.log(`2020년은 윤년일까? ${leapyear(2020)}`);
+        console.log(`2010년은 윤년일까? ${leapyear(2010)}`);
+    </script>
+</body>
