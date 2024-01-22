@@ -1,0 +1,17 @@
+<body>
+    <script>
+        setTimeout(() => {
+            console.log('1초 후 실행')
+
+        }, 1 * 1000)
+
+        let count = 0;
+
+        let id = setInterval(() => {
+            console.log(`1초마다 실행 ${count}번째`)
+            count++
+
+            if(count === 10) clearInterval(id)
+        }, 1 * 1000)
+    </script>
+</body>
