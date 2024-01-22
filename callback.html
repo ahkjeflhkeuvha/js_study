@@ -1,0 +1,17 @@
+<body>
+    <script>
+        var numbers = [1, 2, 3, 4, 5]
+
+        numbers.forEach(function(value, index){
+            console.log(`${index}번째 요소는 ${value}입니다.`)
+        })
+
+        numbers.map(function(value){
+            console.log(`각 요소의 제곱은 ${value * value}입니다.`)
+        })
+
+        numbers.filter(function(value){
+            console.log(value%2 == 0 ? '짝수' : '홀수');    
+        })
+    </script>
+</body>
