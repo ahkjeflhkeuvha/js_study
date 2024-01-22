@@ -1,0 +1,25 @@
+<body>
+    <script>
+        const max = function max(array, ...nums){
+            let output, items
+            
+            if(Array.isArray(array)){
+                output = array[0]
+                items = array
+            }
+            else if(typeof(array) === 'number'){
+                output = array
+                items = nums
+            }
+
+            for(const item of items){
+                if(output < item) output = item
+            }
+            
+            return output
+        }
+
+        console.log(max([1, 2, 3, 4]))
+        console.log(max(1, 2, 3, 4))
+    </script>
+</body>
